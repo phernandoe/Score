@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 table {
@@ -37,7 +38,7 @@ h1 {
     padding: 0;
 }
 
-.artistNameHeader {
+h1 > .genreNameHeader {
     text-decoration: underline;
 }
 

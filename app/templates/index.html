@@ -5,6 +5,8 @@
         <title>Score!</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link rel="stylesheet" href="{{ url_for('.static', filename='styles/index.css') }}">
+        <script type="text/javascript" src="{{ url_for('.static', filename='js/jquery-3.3.1.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('.static', filename='js/index.js') }}"></script>
         <link rel="shortcut icon" type="image/png" href="{{ url_for('.static', filename='images/favicon.png') }}"/>
 
     </head>
@@ -20,37 +22,36 @@
 
             <div class="musicinfo">
 
-                <h1>Top <span class="artistNameHeader">Airplanes</span> Tracks</h1>
+                <h1>Top <span class="genreNameHeader">Rock</span> Tracks</h1>
                 <table>
                     <tr>
                         <td class="artistName">Artist</td>
-                        <td class="genrePercentage">25% Rock</td>
+                        <td class="genrePercentage">25% <span class="genreNameHeader">Rock</span></td>
                     </tr>
 
                     <tr>
                         <td class="artistName">Artist</td>
-
-                        <td class="genrePercentage">25% Rock</td>
+                        <td class="genrePercentage">25% <span class="genreNameHeader">Rock</span></td>
                     </tr>
 
                     <tr>
                         <td class="artistName">Artist</td>
-                        <td class="genrePercentage">25% Rock</td>
+                        <td class="genrePercentage">25% <span class="genreNameHeader">Rock</span></td>
                     </tr>
 
                     <tr>
                         <td class="artistName">Artist</td>
-                        <td class="genrePercentage">25% Rock</td>
+                        <td class="genrePercentage">25% <span class="genreNameHeader">Rock</span></td>
                     </tr>
 
                     <tr>
                         <td class="artistName">Artist</td>
-                        <td class="genrePercentage">25% Rock</td>
+                        <td class="genrePercentage">25% <span class="genreNameHeader">Rock</span></td>
                     </tr>
 
                     <tr>
                         <td class="artistName">Artist</td>
-                        <td class="genrePercentage">25% Rock</td>
+                        <td class="genrePercentage">25% <span class="genreNameHeader">Rock</span></td>
                     </tr>
 
                 </table>

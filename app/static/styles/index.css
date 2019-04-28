@@ -1,7 +1,62 @@
 body {
-    background-color: beige;
+    background-image: url("../../static/images/greta-van-fleet.jpg");
+    background-size: cover;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    width: 50vw;
+    font-size: 25px;
 }
 
 h1 {
-    color: rebeccapurple;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(133, 220, 176, 0.9);
+    z-index: -1;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.musicinfo {
+    margin-top: 25%;
+    padding: 0;
+}
+
+.artistNameHeader {
+    text-decoration: underline;
+}
+
+.artistName {
+    float: left;
+}
+
+.genrePercentage {
+    float: right;
+}
+
+.scrollPrompt {
+    margin-top: 40px;
+}
+
+.arrow {
+    position: relative;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    fill: #FFFFFF;
 }

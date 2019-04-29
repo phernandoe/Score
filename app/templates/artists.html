@@ -2,21 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Score!</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link rel="stylesheet" href="{{ url_for('.static', filename='styles/style.css') }}">
         <script type="text/javascript" src="{{ url_for('.static', filename='js/jquery-3.3.1.min.js') }}"></script>
-        <script type="text/javascript" src="{{ url_for('.static', filename='js/index.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('.static', filename='js/artists.js') }}"></script>
         <link rel="shortcut icon" type="image/png" href="{{ url_for('.static', filename='images/favicon.png') }}"/>
 
     </head>
     <body>
 
         <div class="background"></div>
-
-        <a id="toggleNav">X</a>
 
         <div class="container">
 
@@ -29,43 +25,44 @@
                 </nav>
             </div>
 
+
             <div class="musicinfo">
 
-                <h1>Top <span class="genreName header">Rock</span> Tracks</h1>
+                <h1>Top <span class="artistName header">Airplanes</span> Tracks</h1>
                 <table>
                     <tr>
-                        <td class="song">Artist</td>
-                        <td class="genrePercentage">25%</td>
+                        <td class="song">Fields</td>
+                        <td class="genrePercentage">25% <span class="genreName">Rock</span></td>
                     </tr>
 
                     <tr>
-                        <td class="song">Artist</td>
-                        <td class="genrePercentage">25%</td>
+                        <td class="song">Fields</td>
+                        <td class="genrePercentage">14% <span class="genreName">Alternative</span></td>
                     </tr>
 
                     <tr>
-                        <td class="song">Artist</td>
-                        <td class="genrePercentage">25%</td>
+                        <td class="song">Fields</td>
+                        <td class="genrePercentage">12% <span class="genreName">Rock</span></td>
                     </tr>
 
                     <tr>
-                        <td class="song">Artist</td>
-                        <td class="genrePercentage">25%</td>
+                        <td class="song">Fields</td>
+                        <td class="genrePercentage">59% <span class="genreName">Progressive</span></td>
                     </tr>
 
                     <tr>
-                        <td class="song">Artist</td>
-                        <td class="genrePercentage">25%</td>
+                        <td class="song">Fields</td>
+                        <td class="genrePercentage">23% <span class="genreName">Rock</span></td>
                     </tr>
 
                     <tr>
-                        <td class="song">Artist</td>
-                        <td class="genrePercentage">25%</td>
+                        <td class="song">Fields</td>
+                        <td class="genrePercentage">25% <span class="genreName">Alternative</span></td>
                     </tr>
 
                 </table>
 
-                <div class="scrollPrompt">Scroll for different genres <svg class="arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                <div class="scrollPrompt">Scroll for different artists <svg class="arrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
                     <path id="XMLID_3_" d="M38.035,26.979l-8.987,8.789c-0.523,0.511-1.403,0.141-1.403-0.59V0.826
                         C27.644,0.37,27.275,0,26.818,0h-4.567c-0.456,0-0.826,0.37-0.826,0.826v34.312c0,0.734-0.886,1.103-1.408,0.586l-8.642-8.576
                         c-0.322-0.32-0.841-0.32-1.163,0l-3.721,3.69c-0.325,0.322-0.326,0.846-0.003,1.17l13.387,13.406l4.256,4.265

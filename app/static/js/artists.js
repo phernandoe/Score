@@ -1,11 +1,7 @@
 $(document).ready(function(){
+    let artists = ["Butter", "Daughters", "Rihanna", "xxyyxx", "Getter"];
     let genres = ["Rock", "Hip Hop", "Jazz", "Progressive", "Soul"];
     let index = 0;
-
-    $("#toggleNav").click(function() {
-       $(".slideNav").css("width",0);
-       $("nav > a").hide();
-    });
 
     function throttle(func, limit) {
         let lastCall = 0;
@@ -28,14 +24,18 @@ $(document).ready(function(){
             index--;
         }
 
-        if (index > genres.length - 1 || index < 0) {
+        if (index > artists.length - 1 || index < 0) {
             index = 0;
         }
 
-        console.log(index);
         $(".genreName").text(genres[index]).animate({'opacity':0}, 0.1);
         $(".genreName").text(genres[index]).animate({'opacity':1}, 800);
 
+        $(".artistName").text(artists[index]).animate({'opacity':0}, 0.1);
+        $(".artistName").text(artists[index]).animate({'opacity':1}, 800);
+
     }, 2500));
+
+
 
 });

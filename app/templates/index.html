@@ -16,18 +16,21 @@
 
         <div class="background"></div>
 
-        <a id="toggleNav">X</a>
+        <a id="toggleNav">&#9776</a>
 
         <div class="container">
 
-            <div class="slideNav">
-                <nav>
-                    <a href="{{ url_for('artists') }}">Artists</a>
-                    <a>Genres</a>
-                    <a>Recommend Me Music</a>
-                    <a>Audio Player</a>
-                </nav>
+            <div>
+                <div class="slideNav">
+                    <nav>
+                        <a href="{{ url_for('artists') }}">Artists</a>
+                        <a href="{{ url_for('index') }}">Genres</a>
+                        <a>Recommend Me Music</a>
+                        <a>Audio Player</a>
+                    </nav>
+                </div>
             </div>
+
 
             <div class="musicinfo">
 
@@ -77,5 +80,7 @@
             </div>
 
         </div>
+
+        <script type="text/javascript" src="{{ url_for('.static', filename='js/navigation.js') }}"></script>
     </body>
 </html>

@@ -2,11 +2,6 @@ $(document).ready(function(){
     let genres = ["Rock", "Hip Hop", "Jazz", "Progressive", "Soul"];
     let index = 0;
 
-    $("#toggleNav").click(function() {
-       $(".slideNav").css("width",0);
-       $("nav > a").hide();
-    });
-
     function throttle(func, limit) {
         let lastCall = 0;
         return function() {
@@ -17,8 +12,6 @@ $(document).ready(function(){
             }
         }
     }
-
-
 
     window.addEventListener("wheel", throttle(function(scrollDirection){
 

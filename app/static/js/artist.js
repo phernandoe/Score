@@ -3,6 +3,8 @@ $(document).ready(function(){
     let genres = ["Rock", "Hip Hop", "Jazz", "Progressive", "Soul"];
     let index = 0;
 
+    $(".background").css("background-color" , "rgba(226, 125, 96, 0.9)");
+
     function throttle(func, limit) {
         let lastCall = 0;
         return function() {

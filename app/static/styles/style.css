@@ -19,6 +19,15 @@ h1 {
     margin: 0;
 }
 
+#logo {
+    position: absolute;
+    right: -40px;
+    top: -120px;
+    z-index: 10;
+    height: 300px;
+    width: 300px;
+}
+
 #toggleNav {
     margin: 10px;
     position: absolute;

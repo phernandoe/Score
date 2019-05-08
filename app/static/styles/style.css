@@ -19,6 +19,10 @@ h1 {
     margin: 0;
 }
 
+td {
+    overflow: hidden;
+}
+
 input {
     background-color: rgba(0,0,0,0);
     border: 0;
@@ -103,8 +107,15 @@ input[type=submit]:active {
     transition: ease-in-out;
 }
 
-nav > a:hover {
+nav > a:hover, .artist:hover {
     text-decoration: underline;
+}
+
+.artist {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 nav {

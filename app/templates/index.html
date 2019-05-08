@@ -24,10 +24,9 @@
             <div>
                 <div class="slideNav">
                     <nav>
-                        <a href="{{ url_for('artist') }}">Artists</a>
+                        <a href="{{ url_for('artists') }}">Artists</a>
                         <a href="{{ url_for('index') }}">Genres</a>
-                        <a>Recommend Me Music</a>
-                        <a>Audio Player</a>
+                        <a>Recommender</a>
                     </nav>
                 </div>
             </div>
@@ -35,15 +34,38 @@
 
             <div class="musicinfo">
 
-                <h1>Top <span class="genreName header">Classical</span> Tracks</h1>
+                <h1>Top <span class="genreName header">Rock</span> Tracks</h1>
                 <table>
 
-                    {% for song in classicalInfo[0]%}
-                        <tr>
-                            <td class="song">{{ classicalInfo[0][loop.index] }}</td>
-                            <td class="genrePercentage"> {{ classicalInfo[1][loop.index] }} <span class="genreName">Classical</span></td>
-                        </tr>
-                    {% endfor %}
+                    <tr>
+                        <td class="song">Fields by Dmt</td>
+                        <td class="genrePercentage">25% <span class="genreName">Rock</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="song">Lina by Fazer</td>
+                        <td class="genrePercentage">14% <span class="genreName">Rock</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="song">All I Need by Fazer</td>
+                        <td class="genrePercentage">12% <span class="genreName">Rock</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="song">Children by Mathias</td>
+                        <td class="genrePercentage">59% <span class="genreName">Rock</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="song">Swept by Marc</td>
+                        <td class="genrePercentage">23% <span class="genreName">Rock</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="song">Ice by League</td>
+                        <td class="genrePercentage">25% <span class="genreName">Rock</span></td>
+                    </tr>
 
                 </table>
 

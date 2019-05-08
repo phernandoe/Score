@@ -1,17 +1,18 @@
 $(document).ready(function(){
 
-    let genres = ["Rock", "Hip Hop", "Festival", "Jazz", "Country", "Classical"];
+    let index = 0;
+
+    let genres = ["Classical", "Country", "Festival", "Jazz", "HipHop", "Rock"];
 
     let genresDict = {
         "Rock": "rgba(226, 125, 96, 0.9)",
-        "Hip Hop":"rgba(133, 220, 176, 0.9)",
+        "HipHop":"rgba(133, 220, 176, 0.9)",
         "Festival":"rgba(195, 141, 158, 0.9)",
         "Jazz":"rgba(133, 220, 176, 0.9)",
         "Country":"rgba(232, 168, 124, 0.9)",
         "Classical":"rgba(124, 148, 232, 0.9)"
     };
 
-    let index = 0;
 
     $(".background").css("background-color" , genresDict[genres[index]]);
 

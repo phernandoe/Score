@@ -23,10 +23,9 @@
             <div>
                 <div class="slideNav">
                     <nav>
-                        <a href="{{ url_for('artist') }}">Artists</a>
+                        <a href="{{ url_for('artists') }}">Artists</a>
                         <a href="{{ url_for('index') }}">Genres</a>
-                        <a>Recommend Me Music</a>
-                        <a>Audio Player</a>
+                        <a>Recommender</a>
                     </nav>
                 </div>
             </div>
@@ -38,27 +37,23 @@
                 <table>
 
                     <tr>
-                        <td class="song">Butter</td>
+                        <td class="song"><a class="artist" href="{{ url_for('artist') }}">Butter</a></td>
                     </tr>
 
                     <tr>
-                        <td class="song">Daughter</td>
+                        <td class="song"><a class="artist" href="{{ url_for('artist') }}">Daughters</a></td>
                     </tr>
 
                     <tr>
-                        <td class="song">Rihanna</td>
+                        <td class="song"><a class="artist" href="{{ url_for('artist') }}">Rihanna</a></td>
                     </tr>
 
                     <tr>
-                        <td class="song">Getter</td>
+                        <td class="song"><a class="artist" href="{{ url_for('artist') }}">Getter</a></td>
                     </tr>
 
                     <tr>
-                        <td class="song">xxyxx</td>
-                    </tr>
-
-                    <tr>
-                        <td class="song">Victor Wooten</td>
+                        <td class="song"><a class="artist" href="{{ url_for('artist') }}">xxyxx</a></td>
                     </tr>
 
                 </table>

@@ -20,3 +20,7 @@ def login():
 	return render_template('login.html')
 
 
+@app.route('/recommend')
+def recommend():
+	return render_template('recommend.html')
+

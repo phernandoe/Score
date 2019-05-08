@@ -41,6 +41,44 @@ input[type=submit]:active {
     color: #BBBBBB;
 }
 
+
+#Jazz  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+#Hiphop  {
+
+    width: 140px;
+    height: 140px;
+
+
+}
+
+#Classical  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+#Country  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+#ROck  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+#Festival  {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+
 #logo {
     position: absolute;
     right: -40px;

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Score!</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('.static', filename='styles/style.css') }}">
+        <script type="text/javascript" src="{{ url_for('.static', filename='js/jquery-3.3.1.min.js') }}"></script>
+
+        <link rel="shortcut icon" type="image/png" href="{{ url_for('.static', filename='images/favicon.png') }}"/>
+        <script>
+            function myFunction(){
+                let hiphop =document.getElementById('Hiphop');
+                let Jazz = document.getElementById('Jazz');
+                let Festival = document.getElementById('Festival');
+                let Country = document.getElementById('Country');
+                let Classical = document.getElementById('Classical');
+                let Rock = document.getElementById('ROck');
+
+                if (hiphop.checked){
+
+                }
+                if (Jazz.checked){
+
+                }
+                if (Festival.checked){
+
+                }
+                if (Country.checked){
+
+                }if (Classical.checked){
+
+                }if (Rock.checked){
+
+                }
+
+
+
+            }
+
+        </script>
+    </head>
+    <body>
+
+        <div class="background"></div>
+
+        <a id="toggleNav">&#9776</a>
+        <img id="logo" src="../static/images/score.png" alt="Score logo">
+
+        <div class="container">
+
+            <div>
+                <div style="height: 900px;" class="slideNav">
+                    <nav >
+                        <a href="{{ url_for('artist') }}">Artists</a>
+                        <a href="{{ url_for('index') }}">Genres</a>
+                        <a>Recommender</a>
+                        <a>Audio Player</a>
+                    </nav>
+                </div>
+            </div>
+
+
+
+
+        <div >
+            <p> Select The Genres That Interest You</p>
+            <div style="position: absolute; top: 60px; font-size: 25px;">
+                <input type="checkbox" id="Hiphop" > Hip-Hop
+            </div>
+            <div style="position: absolute; top: 120px; font-size: 25px;">
+                <input type="checkbox" id="Jazz"> Jazz
+
+            </div>
+            <div style="position: absolute; top: 180px; font-size: 25px;">
+                <input type="checkbox" id="Festival"> Festival
+
+            </div>
+            <div style="position: absolute; top: 240px; font-size: 25px;">
+                <input type="checkbox" id="Country"> Country
+
+            </div>
+            <div style="position: absolute; top: 300px; font-size: 25px;">
+                <input type="checkbox" id="Classical"> Classical
+
+            </div>
+            <div style="position: absolute; top: 360px; font-size: 25px;">
+                <input type="checkbox" id="ROck"> Rock
+
+            </div>
+
+        </div>
+
+        </div>
+        <script type="text/javascript" src="{{ url_for('.static', filename='js/navigation.js') }}"></script>
+    </body>
+</html>

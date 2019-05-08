@@ -19,6 +19,28 @@ h1 {
     margin: 0;
 }
 
+input {
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    border-bottom: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 25px;
+    outline: none;
+}
+
+input[type=submit] {
+    border-bottom: 0;
+}
+
+input[type=submit]:hover {
+    border-bottom: 3px solid #FFFFFF;
+    cursor: pointer;
+}
+
+input[type=submit]:active {
+    color: #BBBBBB;
+}
+
 #logo {
     position: absolute;
     right: -40px;
@@ -38,7 +60,7 @@ h1 {
 
 .slideNav {
     background-color: rgba(255, 255, 255, 0.2);
-    height: 130%;
+    height: 200%;
     width: 80%;
     transition: ease-in-out;
 }

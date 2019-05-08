@@ -13,6 +13,10 @@ def artist():
 
 @app.route('/artist')
 def artists():
-	return render_template('artist.html');
+	return render_template('artist.html')
+
+@app.route('/login')
+def login():
+	return render_template('login.html')
 
 

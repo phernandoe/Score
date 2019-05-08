@@ -64,6 +64,7 @@ nav > a:first-child {
     width: 100%;
     background-color: rgba(133, 220, 176, 0.9);
     z-index: -1;
+    transition: ease-in-out 400ms;
 }
 
 

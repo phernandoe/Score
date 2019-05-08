@@ -107,8 +107,15 @@ input[type=submit]:active {
     transition: ease-in-out;
 }
 
-nav > a:hover {
+nav > a:hover, .artist:hover {
     text-decoration: underline;
+}
+
+.artist {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 nav {

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    let artists = ["Butter", "Daughters", "Rihanna", "xxyyxx", "Getter"];
+    let artists = ["Butter", "Daughters", "Rihanna", "Getter", "xxyxx"];
     let genres = ["Rock", "Hip Hop", "Jazz", "Progressive", "Soul"];
     let index = 0;
 
@@ -30,11 +30,10 @@ $(document).ready(function(){
             index = 0;
         }
 
-        $(".genreName").text(genres[index]).animate({'opacity':0}, 0.1);
-        $(".genreName").text(genres[index]).animate({'opacity':1}, 800);
-
         $(".artistName").text(artists[index]).animate({'opacity':0}, 0.1);
         $(".artistName").text(artists[index]).animate({'opacity':1}, 800);
+        $(".arrow").animate({top: "+=10"},250);
+        $(".arrow").animate({top: "-=10"},250);
 
     }, 1500));
 

@@ -54,11 +54,11 @@ def index():
 	return render_template('index.html', classicalInfo=classicalInfo, countryInfo=countryInfo, festivalInfo=festivalInfo, jazzInfo=jazzInfo, hiphopInfo=hiphopInfo, rockInfo=rockInfo)
 
 @app.route('/artists')
-def artist():
+def artists():
 	return render_template('artistList.html')
 
 @app.route('/artist')
-def artists():
+def artist():
 	return render_template('artist.html')
 
 @app.route('/login')

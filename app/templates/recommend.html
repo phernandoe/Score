@@ -11,7 +11,47 @@
 
         <link rel="shortcut icon" type="image/png" href="{{ url_for('.static', filename='images/favicon.png') }}"/>
         <script>
+            let total = " ";
+
+            let a = [{"song":"Margot Meets The Melody Maker - Torch (Extrawelt Remix)", "score": "0.94173 "},
+                {"song":"The Pharcyde - Bullsh*t (Instrumental)", "score": "0.900025"},
+                {"song":"The Roots - No Alibi", "score": "0.886515"},
+                {"song":"Mickey Hart & Zakir Hussain - Dances With Wood", "score": "0.886018"},
+                {"song":"LFO (Pop) - Summer Girls", "score": "0.800822"}];
+
+            let b = [{"song":"Corciolli - Rain", "score": "0.979566"},
+                {"song":" Steve Lacy - Alone Together", "score": "0.948645"},
+                {"song":"Corciolli - Work (Water)", "score": "0.935583"},
+                {"song":"Peggy Lee & Art Lund (Holiday) - Winter Weather", "score": "0.935409"},
+                {"song":" Daevid Allen - Untitled", "score": "0.93442"}];
+
+            let c = [{"song":"Black Lips - Can't Dance", "score": "0.991935"},
+                {"song":"ABORTED - Clinical Colostomy", "score": "0.968334"},
+                {"song":"The Verve - Blue (USA Mix)", "score": "0.954486"},
+                {"song":"Guardian - Power Of Love", "score": "0.953856"},
+                {"song":"Jay Reatard - We Who Wait", "score": "0.94404"}];
+
+            let d = [{"song":"Herman's Hermits - Listen People", "score": "0.908942"},
+                {"song":"Irish Rovers (Holiday) - We Wish You A Merry Christmas", "score": "0.754689"}
+                ,{"song":" Irish Rovers (Holiday) - The Holly Bears The Crown", "score": "0.696739"},
+                {"song":" Irish Rovers (Holiday) - God Rest Ye Merry Gentlemen", "score": "0.667116"},
+                {"song":"Rachel Harrington - Shoeless Joe", "score": "0.647281"}];
+
+            let e = [{"song":" Verdi. Giuseppe - Luisa Miller. Opera", "score": "0.999974"},
+                {"song":" Cherubini. Luigi - Requiem No.2. For Male Chorus & Orchestra In D Minor", "score": "0.998933"},
+                {"song":" Verdi. Giuseppe - La Traviata. Opera", "score": "0.998594"},
+                {"song":"Mahler. Gustav - Symphony No. 10 In F Sharp Minor (realization By Deryck Cooke)", "score": "0.998329"},
+                {"song":"Antonio Vivaldi (Holiday) - Gloria In D Major. Et In Terra Pax", "score": "0.998277"}];
+
+            let f = [{"song":"Liquid Mind - I Am Willing", "score": "0.900176"},
+                {"song":"No Age - My Life's Alright Without You", "score": "0.763118"},
+                {"song":"Tokyo Police Club - Juno", "score": "0.746604"},
+                {"song":"Ascend - The Obelisk Of Kolob", "score": "0.742362"},
+                {"song":"Band Of Horses - The Funeral", "score": "0.742355"}];
+
+
             function myFunction(){
+                let total = " ";
                 let hiphop =document.getElementById('Hiphop');
                 let Jazz = document.getElementById('Jazz');
                 let Festival = document.getElementById('Festival');
@@ -20,21 +60,50 @@
                 let Rock = document.getElementById('ROck');
 
                 if (hiphop.checked){
+                    for(i = 0; i < a.length;i++){
+                        total+=a[i]["song"]+", "+"\n"+"\n";
 
+                    }
+                    alert(total);
                 }
                 if (Jazz.checked){
+                    for(i = 0; i < b.length;i++){
+                        total+=b[i]["song"]+","+"\n"+"\n";
+
+                    }
+                    alert(total);
 
                 }
                 if (Festival.checked){
+                    for(i = 0; i < c.length;i++){
+                        total+=c[i]["song"]+","+"\n"+"\n";
 
+                    }
+                    alert(total);
                 }
                 if (Country.checked){
+                    for(i = 0; i < d.length;i++){
+                        total+=d[i]["song"]+","+"\n"+"\n";
 
-                }if (Classical.checked){
+                    }
+                    alert(total);
+                }
+                if (Classical.checked){
+                    for(i = 0; i < e.length;i++){
+                        total+=e[i]["song"]+","+"\n"+"\n";
 
-                }if (Rock.checked){
+                    }
+                    alert(total);
+                }
+                if (Rock.checked){
+                    for(i = 0; i < f.length;i++){
+                        total+=f[i]["song"]+","+"\n"+"\n";
+
+                    }
+                    alert(total);
 
                 }
+                document.getElementById("final").innerHTML = total;
 
 
 
@@ -64,7 +133,9 @@
 
 
 
-
+        <div style="position: absolute; top: 200px; font-size: 25px; width: 500px; right: 15px">
+                <p id="final"></p>
+            </div>
         <div >
             <p> Select The Genres That Interest You</p>
             <div style="position: absolute; top: 60px; font-size: 25px;">
@@ -88,6 +159,12 @@
             </div>
             <div style="position: absolute; top: 360px; font-size: 25px;">
                 <input type="checkbox" id="ROck"> Rock
+
+            </div>
+            <div style="position: absolute; top: 420px; font-size: 25px;">
+                <button onclick="myFunction()">
+                    Submit
+                </button>
 
             </div>
 

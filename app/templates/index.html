@@ -16,7 +16,7 @@
 
         <div class="background"></div>
 
-        <a id="toggleNav">&#9776</a>
+        <a id="toggleNav">x</a>
         <img id="logo" src="{{ url_for('.static', filename='images/score.png') }}" alt="Score logo">
 
         <div class="container">
@@ -35,37 +35,15 @@
 
             <div class="musicinfo">
 
-                <h1>Top <span class="genreName header">Rock</span> Tracks</h1>
+                <h1>Top <span class="genreName header">Classical</span> Tracks</h1>
                 <table>
-                    <tr>
-                        <td class="song">Fields</td>
-                        <td class="genrePercentage">25% <span class="genreName">Rock</span></td>
-                    </tr>
 
-                    <tr>
-                        <td class="song">Fields</td>
-                        <td class="genrePercentage">14% <span class="genreName">Alternative</span></td>
-                    </tr>
-
-                    <tr>
-                        <td class="song">Fields</td>
-                        <td class="genrePercentage">12% <span class="genreName">Rock</span></td>
-                    </tr>
-
-                    <tr>
-                        <td class="song">Fields</td>
-                        <td class="genrePercentage">59% <span class="genreName">Progressive</span></td>
-                    </tr>
-
-                    <tr>
-                        <td class="song">Fields</td>
-                        <td class="genrePercentage">23% <span class="genreName">Rock</span></td>
-                    </tr>
-
-                    <tr>
-                        <td class="song">Fields</td>
-                        <td class="genrePercentage">25% <span class="genreName">Alternative</span></td>
-                    </tr>
+                    {% for song in classicalInfo[0]%}
+                        <tr>
+                            <td class="song">{{ classicalInfo[0[loop.index]] }}</td>
+                            <td class="genrePercentage"> {{ classicalInfo[1[loop.index]] }} <span class="genreName">Classical</span></td>
+                        </tr>
+                    {% endfor %}
 
                 </table>
 

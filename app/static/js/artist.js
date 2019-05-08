@@ -36,7 +36,7 @@ $(document).ready(function(){
         $(".artistName").text(artists[index]).animate({'opacity':0}, 0.1);
         $(".artistName").text(artists[index]).animate({'opacity':1}, 800);
 
-    }, 2500));
+    }, 1500));
 
 
 

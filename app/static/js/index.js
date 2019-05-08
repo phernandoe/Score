@@ -42,6 +42,8 @@ $(document).ready(function(){
         $(".background").css("background-color" , genresDict[genres[index]]);
         $(".genreName").text(genres[index]).animate({'opacity':0}, 0.1);
         $(".genreName").text(genres[index]).animate({'opacity':1}, 800);
+        $(".arrow").animate({top: "+=10"},250);
+        $(".arrow").animate({top: "-=10"},250);
 
     }, 1500));
 

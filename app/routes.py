@@ -5,7 +5,7 @@ import random as rand
 
 
 def loadCsv(path):
-	text = np.genfromtxt(path, delimiter=",", skip_header=1, dtype=object)
+	text = np.genfromtxt(path, delimiter=",", skip_header=1, dtype=str)
 	return text
 
 

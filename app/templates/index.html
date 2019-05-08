@@ -40,8 +40,8 @@
 
                     {% for song in classicalInfo[0]%}
                         <tr>
-                            <td class="song">{{ classicalInfo[0[loop.index]] }}</td>
-                            <td class="genrePercentage"> {{ classicalInfo[1[loop.index]] }} <span class="genreName">Classical</span></td>
+                            <td class="song">{{ classicalInfo[0][loop.index] }}</td>
+                            <td class="genrePercentage"> {{ classicalInfo[1][loop.index] }} <span class="genreName">Classical</span></td>
                         </tr>
                     {% endfor %}
 
